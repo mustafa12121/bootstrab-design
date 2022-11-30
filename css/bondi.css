@@ -1,0 +1,220 @@
+:root {
+  --dark: #19283f;
+  --green: #33d1cc;
+  --red: #ff3150;
+  --yellow: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  user-select: none;
+}
+.navbar {
+  background: var(--dark);
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.main-btn {
+  padding: 0.5rem 1rem;
+  color: var(--yellow);
+  background-color: var(--red);
+}
+.main-btn:hover {
+  color: var(--dark);
+  background-color: var(--red);
+}
+
+.main-title svg {
+  color: var(--yellow);
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green);
+}
+
+.search {
+  border-left: 1px solid var(--green);
+}
+.search svg {
+  color: var(--green);
+  cursor: pointer;
+}
+.navbar-toggler {
+  color: white;
+  font-size: 24px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.landing {
+  min-height: calc(100vh - 56px);
+  background-color: var(--dark);
+}
+
+.features .icons {
+  height: 200px;
+}
+.features .icons svg {
+  left: 50%;
+  color: var(--section-color);
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.features .icons .number {
+  font-size: 12rem;
+}
+
+.features .icons .icon {
+  color: var(--green);
+}
+
+.features .fetuer {
+  color: var(--yellow);
+}
+
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+.our-work ul .active {
+  background-color: var(--red);
+  color: var(--yellow);
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red);
+}
+
+.our-work .box {
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #33d1cc6e;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  color: white;
+  transform: translateX(calc(-100% - 5px));
+  -webkit-transform: translateX(calc(-100% - 5px));
+  -moz-transform: translateX(calc(-100% - 5px));
+  -ms-transform: translateX(calc(-100% - 5px));
+  -o-transform: translateX(calc(-100% - 5px));
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.our-work .box:hover:before {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.up {
+  right: 1rem;
+  opacity: 0;
+  bottom: 1rem;
+  display: none;
+  transition: 0.3s;
+  position: fixed;
+  z-index: 100;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.our-team {
+  background-color: var(--section-color);
+}
+.our-team .title h2 {
+  color: var(--yellow);
+}
+.our-team .name {
+  background-color: var(--green);
+}
+
+.tech {
+  background-color: var(--dark);
+}
+
+.subscripe {
+  background-color: var(--yellow);
+}
+.subscripe .sub {
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+
+.subscripe ::placeholder {
+  color: white;
+}
+.subscripe input[type="email"] {
+  border: none;
+  border-bottom: 1px white solid;
+}
+
+.subscripe input:focus {
+  outline: none;
+}
+
+footer {
+  background-color: var(--dark);
+}
+
+footer div span {
+  color: var(--yellow);
+}
+
+footer div p > span {
+  color: var(--green);
+}
+
+footer ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+footer ul li:nth-of-type(1) svg {
+  background-color: #1877f2;
+}
+footer ul li:nth-of-type(2) svg {
+  background-color: #1da1f2;
+}
+footer ul li:nth-of-type(3) svg {
+  background-color: #0077b5;
+}
+footer ul li:nth-of-type(4) svg {
+  background-color: #f00;
+}
